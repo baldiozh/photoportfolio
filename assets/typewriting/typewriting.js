@@ -41,7 +41,7 @@ class typeWriting {
       this.char = fullWord.substring(0, this.char.length + 1);
     }
     // Display on DOM
-    this.element.innerHTML = `<span class="write">${this.char}</span><span class="blinking-cursor"></span>`;
+    this.element.innerHTML = `<span class="write">${this.char}</span><span class="blinking-cursor">|</span>`;
     // When word is completed
     if (!this.isDeleting && this.char === fullWord) {
       // break the loop before deletion.
